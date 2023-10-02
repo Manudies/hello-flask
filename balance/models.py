@@ -46,6 +46,17 @@ class ListaMovimientos:
                 )
                 self.lista_movimientos.append(movimiento)
 
+    def agregar(self, fecha, concepto, tipo, cantidad):
+        self.lista_movimientos.append([fecha, concepto, tipo, cantidad])
+        self.lista_movimientos.sort(key=lambda item: item[0], reverse=True)
+        self.guardar_archivo()
+
+    def guardar_archivo(self):
+        with open(RUTA_FICHERO, mode='w', newline="\n") as records_file:
+            writer = csv.writer(records_file)
+            writer.writerow(("fecha", "concepto", "tipo", "cantidad"))
+            writer.writerows(self.lista_movimientos)
+
     def __str__(self):
         result = ''
         for mov in self.lista_movimientos:

@@ -1,5 +1,6 @@
-fecha,concepto,ingreso_gasto,cantidad
-2023-09-25,Libro de programación en Python,G,20.95
-2023-09-24,Libro POO,G,25.49
-2023-09-26,Regalo,I,50.00
-2023-09-32,Regalo,I,50.00
+fecha,concepto,tipo,cantidad
+2023-09-30,Libro,G,60
+2023-09-29,Libro,G,60
+2023-09-29,Libro,G,60
+2023-09-28,Libro,G,56.31
+2023-09-25,Libro,G,60
